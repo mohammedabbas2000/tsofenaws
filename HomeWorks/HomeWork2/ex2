@@ -1,0 +1,14 @@
+#!/bin/bash
+flag=1
+while [ $flag -ne 0 ]
+do
+read -p "Enter file: " name
+for i in $(ls)
+do
+if [ $name = $i ]
+then
+echo the file $i is exists
+flag=0
+fi
+done
+done
