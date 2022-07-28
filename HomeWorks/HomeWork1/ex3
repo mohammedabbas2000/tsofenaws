@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $RANDOM    $RANDOM     $RANDOM
+echo $RANDOM    $RANDOM     $RANDOM
+echo $RANDOM    $RANDOM     $RANDOM

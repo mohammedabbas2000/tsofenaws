@@ -1,0 +1,17 @@
+#!/bin/bash
+touch run4
+echo "
+#!/bin/bash
+if [ -d "/path/dir99/" ]
+then
+echo "dir99 is exists"
+else
+mkdir dir99
+cd dir99
+touch hello.txt
+echo Hello bash > hello.txt
+fi
+" > run4
+chmod u+x run4
+./run4
+rm run4

@@ -1,0 +1,13 @@
+#!/bin/bash
+declare -A country
+country[Spain]=Madrid
+country[England]=London
+country[Germany]=Berlin
+country[France]=Paris
+country[Italy]=Rome
+
+echo Enter Name of Country?
+read Name
+
+echo Country is : $Name
+echo Capital City is : ${country[$Name]}

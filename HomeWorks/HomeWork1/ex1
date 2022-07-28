@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Enter word?
+read word
+if [ "telephone" \< "$word" ]
+then
+echo $word after telephone
+else
+echo telephone after $word
+fi
