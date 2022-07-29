@@ -1,3 +1,4 @@
+# Console shell that run command ls , pwd , free , exit
 #!/bin/bash
 while true
 do
