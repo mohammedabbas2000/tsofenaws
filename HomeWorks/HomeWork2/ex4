@@ -1,0 +1,13 @@
+#!/bin/bash
+rm yourdir
+if [ $? -eq 1 ] || [ $? -eq 2 ]
+then 
+cd yourdir
+for i in $(ls)
+do
+rm $i
+done
+cd ..
+rm -d yourdir
+echo the directory removed!
+fi
