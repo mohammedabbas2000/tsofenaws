@@ -1,0 +1,20 @@
+#!/bin/bash
+if [ ! $# -eq 0 ]
+then
+if [ $1 = "start" ]
+then
+sleep 60 &
+echo Process started on PID: "$!"
+fi
+if [ $1 = "status" ]
+then 
+echo The process is running on PID: $( pidof -s sleep )
+fi
+if [ $1 = "stop" ]
+then
+echo Process terminated
+kill $( pidof -s sleep )
+fi
+else
+echo Bad argument
+fi

@@ -1,0 +1,20 @@
+# Polish Notion ( + and - ) מחשבן
+#!/bin/bash
+signal=$1
+if [ $1 = "+" ]
+then
+sum=0
+for i in ${@:2}
+do
+((sum=$sum+$i))
+done
+else if [ $1 = "-" ]
+then
+sum=$2
+for i in ${@:3}
+do
+((sum=sum-$i))
+done
+fi
+fi
+echo $sum

@@ -1,0 +1,19 @@
+#!/bin/bash
+while true
+do
+echo ---------------------------------------------
+echo -n You can only run these commands:
+echo ls , pwd , free , exit
+read command
+if [ $command = "ls" ];then
+	ls
+elif [ $command = "pwd" ];then
+	pwd
+elif [ $command = "free" ];then
+	free
+elif [ $command = "exit" ];then
+	exit
+else 
+	echo command not defind
+fi
+done
