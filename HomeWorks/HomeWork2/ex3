@@ -5,7 +5,7 @@ do
 if [ ! -d $i ]
 then
 count=$(echo $i | wc -m)
-sum=$(($sum + $count))
+sum=$(($sum + ($count - 1)))
 fi
 done
 echo the sums is : $sum
